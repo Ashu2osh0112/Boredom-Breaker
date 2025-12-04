@@ -14,13 +14,15 @@ st.markdown(
     <div style="
         padding: 25px; 
         background-color: white; 
+        border: 6px solid; 
+        border-image: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red) 1;
         border-radius: 15px; 
-        border: 1px solid #ddd; 
-        margin-top: 30px;
+        margin-bottom: 20px;
         min-height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;
+        text-align: center;
     ">
         <h3 style='text-align: center; color: black;'>{st.session_state.activity}</h3>
     </div>
