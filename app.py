@@ -1,14 +1,17 @@
 import streamlit as st
 import data as d
 
+# Page title
 st.markdown(
     "<h1 style='text-align: center;'>Boredom Breaker</h1>",
     unsafe_allow_html=True
 )
 
+# Load activity only once when app starts
 if "activity" not in st.session_state:
     st.session_state.activity = d.quest()
 
+# Activity display box
 st.markdown(
     f"""
     <div style="
@@ -33,6 +36,7 @@ st.markdown(
 st.write("")
 st.write("")
 
+# Button to update the activity
 col1, col2, col3 = st.columns([4, 2, 4])
 with col2:
     if st.button("New Activity"):
