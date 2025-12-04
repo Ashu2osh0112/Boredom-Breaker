@@ -1,8 +1,16 @@
 import requests
 
 def quest():
-    Complete_link = "https://bored-api.appbrewery.com/random"
-    response = requests.get(Complete_link)
-    return response.json()['activity']
+    try:
+        url = "https://www.boredapi.com/api/activity/"
+        response = requests.get(url, timeout=5)
 
-print(quest())
+        if response.status_code == 200:
+            data = response.json()
+            return data.get("activity", "Couldn't find an activity")
+
+        else:
+            return "API error. Try again!"
+
+    except:
+        return "Connection error. Please try again!"
