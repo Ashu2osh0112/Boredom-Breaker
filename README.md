@@ -4,6 +4,7 @@ Boredom Breaker is a small Streamlit web app that shows fun random activities.
 It uses the Bored API to fetch a new activity every time you click the button.
 
 ---
+<img width="1918" height="867" alt="image" src="https://github.com/user-attachments/assets/e4f39c40-42b5-4449-93ab-a9821dac0cc8" />
 
 ## 🚀 Features
 
@@ -40,4 +41,4 @@ pip install streamlit
 ## 📚 API Used
 
 Bored API (App Brewery version):
-https://bored-api.appbrewery.com/random
+https://bored-api.appbrewery.com/
