@@ -35,7 +35,7 @@ data.py → API request function
 
 ```bash
 pip install streamlit
-
+```
 
 ## 📚 API Used
 
